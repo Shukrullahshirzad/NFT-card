@@ -1,0 +1,169 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #0d192b;
+  font-family: "Outfit", sans-serif;
+}
+
+.card {
+  width: 340px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #14253d;
+  border-radius: 10px;
+}
+
+.card .img {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 25px;
+  position: relative;
+  background-color: rgba(0, 255, 247, 0.637);
+}
+
+.card .img .eye {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 15%;
+  z-index: -1;
+}
+
+.card .img:hover .eye {
+  z-index: 2;
+  cursor: pointer;
+}
+
+.card .img:hover .main-img {
+  mix-blend-mode: overlay;
+  opacity: 0.5;
+}
+
+.card .img img {
+  width: 100%;
+  display: block;
+}
+
+.content {
+  width: 85%;
+  margin-left: 27px;
+}
+
+.text {
+  width: 100%;
+}
+
+.text h1 {
+  color: white;
+  font-size: 22px;
+}
+
+.text h1:hover {
+  color: #00fff7;
+}
+
+.text .para {
+  color: rgba(139, 172, 218, 0.726);
+}
+
+.text .figures {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.text .figures img {
+  height: 18px;
+  margin-right: 5px;
+}
+
+.text .figures .etu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #00fff7;
+}
+
+.text .figures .timeLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: rgba(139, 172, 218, 0.726);
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #2f415b;
+}
+
+.author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.author p {
+  color: white;
+}
+
+.author p:hover {
+  color: #00fff7;
+}
+
+.author img {
+  width: 30px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.author .creator {
+  color: rgba(139, 172, 218, 0.726);
+}
+/*# sourceMappingURL=style.css.map */

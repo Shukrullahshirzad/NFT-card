@@ -1,0 +1,116 @@
+@import "variables";
+@import "mixins";
+@import "globals";
+body{
+  margin: 0;
+  padding: 0;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center; 
+   background-color: $very-dark-blue;
+   font-family: $font-family;
+}
+.card{
+  width: 340px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: $very-dark-blue-card;
+  border-radius: 10px;
+
+  .img{ 
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 25px;
+    position: relative;
+    background-color: $cyan-background;
+    
+    .eye{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 15%;
+      z-index: -1;
+      
+    }
+    &:hover .eye{
+      z-index: 2;
+      cursor: pointer;
+    }
+    &:hover .main-img{
+      mix-blend-mode: overlay;
+      opacity: 0.5;
+    }
+    img{
+    width: 100%;
+    display: block;
+    }
+  }
+}
+.content{
+  width: 85%;
+  margin-left: 27px;
+}
+
+.text{
+  width: 100%;
+  h1{
+    color: $white;
+    font-size: 22px;
+    &:hover{
+      color: $cyan;
+    }
+  }
+  .para{
+    color: $soft-blue;
+  }
+  .figures{
+    display: flex;
+    justify-content: space-between;
+    img{
+      height: 18px;
+      margin-right: 5px;
+    }
+    .etu{
+      display: flex;
+      align-items: center;
+      color: $cyan;
+    }
+    .timeLeft{
+      display: flex;
+      align-items: center;
+      color: $soft-blue;
+    }
+     
+  }
+}
+.line{
+  width: 100%;
+  height: 1px;
+  background-color: $very-dark-blue-line;
+}
+.author{display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  
+  p{
+    color: $white;
+    &:hover{
+      color: $cyan;
+    }
+  }
+  img{
+  width: 30px;
+  border: 1px solid $white;
+  border-radius: 50%;
+  margin-right: 10px;
+  
+  }
+  .creator{
+    color: $soft-blue;
+  }
+}
